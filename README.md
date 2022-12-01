@@ -1,2 +1,24 @@
-# favorite-mario-game-app
-Web Dev VueJS final project based on Super Mario games I've played in the past. Front-end code storage located in this repository
+# final-project
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
