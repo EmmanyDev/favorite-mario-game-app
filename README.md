@@ -1,5 +1,8 @@
 # final-project
 
+### Favorite Super Mario Video Games Vue App Wireframe
+![](Web%20Dev%20Vue%20Final%20Project.drawio.png)
+
 ## Project setup
 ```
 npm install
