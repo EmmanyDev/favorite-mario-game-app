@@ -6,13 +6,9 @@
     "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "jsonbackend": "npx json-server --watch -p 8080 data.json"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.8.3",
-    "cors": "^2.8.5",
-    "node-fetch": "^3.3.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
