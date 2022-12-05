@@ -2,7 +2,7 @@ const http = require('http');
 const data = require("./data.json");
 
 const host = 'localhost';
-const port = 8081;
+const port = process.env.PORT || 8081;// try again with this change. Keep looking at logs for support
 
 const server = http.createServer((req, res) => {
     res.setHeader("Content-Type", "application/json");
