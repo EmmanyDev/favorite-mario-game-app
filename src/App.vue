@@ -28,10 +28,10 @@ export default {
   methods: {
     // Promise that grabs data from server 
     fetchGames: async () => {
-      const res = await fetch("http://localhost:8080/games"); // Fetch data from this URL
+      const res = await fetch("/api"); // Fetch data from this URL 
       const data = await res.json(); // Grabs the json version of the data
-      console.log(data);
-      return data;
+      console.log("Data: ", data["api"]);
+      return data["api"];
     }
   },
   async created() {
