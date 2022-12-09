@@ -38,18 +38,14 @@
     }
 
     .heading {
-        /* border: 1px solid; */
         font-family: 'Solway', serif;
         padding: 10px 0;
-        /* grid-column: 1 / 3;
-        display: grid; */
     }
     .heading h3 {
-        /* border: 1px solid; */
         text-align: center;
         font-size: 25px;
         align-self: flex-end;
-        padding: 10px 0;
+        padding: 10px;
     }
 
     img {
