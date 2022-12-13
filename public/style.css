@@ -1,0 +1,1347 @@
+/* Exo font family */
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Section bg colors */
+    --nav-bg: #ffffff;
+    --image-view-bg: #BBA68F;
+    --aboutme-bg: #2A3D45;
+    --skills-bg: #DDC9B4;
+    --exp-bg: #BCAC9B;
+    --projs-bg: #C17C74;
+    --blogs-bg: #BBA68F;
+    --footer-bg: #2A3D45;
+    --copyright-bg: #DDC9B4;
+
+    /* Re-definitions of color */
+    --blackish: #333333;
+    --whiteish: #f2f2f2;
+
+    /* Centering grouped content (divs) */
+    --centering: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    background-color: #BBA68F;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: var(--nav-bg);
+}
+nav .logo {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    flex-grow: 1;
+}
+nav .logo a {
+    text-decoration: none;
+    color: #262626;
+}
+
+nav .logo span {
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+}
+nav #navlinks {
+    text-align: center;
+    margin-top: 10px;
+    flex-grow: 2;
+}
+nav #navlinks a {
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #262626;
+    transition: ease-in-out 0.3s;
+}
+
+nav #navlinks a:hover {
+    font-weight: 550;
+}
+
+/* Main view */
+main .image-view {
+    border: none;
+    padding: 20px 0;
+    margin-top: 70px;
+    background-color: var(--image-view-bg);
+}
+main .image-view .professional-pic {
+    width: 350px;
+    margin: 15px auto;
+}
+main .image-view .professional-pic img {
+    width: 350px;
+    border-radius: 45%;
+}
+main .picture-text {
+    width: 300px;
+    margin: var(--centering);
+}
+main .picture-text span {
+    display: block;
+    text-align: center;
+}
+main .picture-text span:first-child {
+    font-size: 30px;
+    font-weight: 500;
+}
+main .picture-text span:last-child {
+    font-size: 23px;
+    font-style: italic;
+}
+
+/* About me */
+main #aboutme {
+    /* border: 1px solid; */
+    background-color: var(--aboutme-bg);
+    padding: 50px 0;
+}
+
+.title {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+main #aboutme #aboutme-title {
+    color: var(--whiteish);
+}
+
+main #aboutme .info {
+    display: flex;
+}
+
+main #aboutme .education {
+    margin: 30px 0;
+    color: var(--whiteish);
+    flex-grow: 1;
+}
+
+main #aboutme .education .img-box {
+    width: 250px;
+    margin: var(--centering);
+}
+main #aboutme .education .img-box img {
+    width: 250px;
+    border-radius: 40px;
+}
+
+main #aboutme .info .education .details {
+    text-align: center;
+    width: 400px;
+    padding: 20px 10px;
+    margin: var(--centering);
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
+
+main #aboutme .info .aboutme-desc {
+    width: 35%;
+    flex-grow: 1;
+    align-self: center;
+    justify-self: flex-start;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    margin-right: 150px;
+    line-height: 2em;
+    letter-spacing: 0.5px;
+    background-color: var(--whiteish);
+}
+
+main #aboutme .info .aboutme-desc p {
+    margin-bottom: 20px;
+}
+
+/* Technical Skills */
+#tech-skills {
+    padding: 40px 0;
+    background-color: var(--skills-bg);
+}
+
+#tech-skills .skills {
+    display: flex;
+    align-items: center;
+}
+
+#tech-skills .skills div h2 {
+    text-align: center;
+}
+
+#tech-skills .skills .status {
+    margin: 20px 10px;
+    
+}
+
+#tech-skills .skills .skill-bars {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    background-color: var(--whiteish);
+}
+
+#tech-skills .skills .software {
+    height: 300px;
+}
+
+#tech-skills progress {
+    appearance: none;
+    display: block;
+    height: 40px; 
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+#tech-skills label {
+    font-weight: 300;
+}
+
+#tech-skills progress::-webkit-progress-bar {
+    background-color: rgb(181, 181, 181);
+    border-radius: 10px;
+}
+
+#tech-skills progress::-webkit-progress-value {
+    background-color: #80bfff;
+    border-radius: 10px;
+}
+
+/* Experience */
+#my-experience {
+    background-color: var(--exp-bg);
+    padding: 50px 0;
+}
+
+#my-experience .title {
+    padding: 30px 0;
+}
+
+#my-experience .experience {
+    border-radius: 10px;
+    width: 80%;
+    padding: 0 10px;
+    margin: var(--centering);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--whiteish);
+}
+#my-experience .experience:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+#my-experience .experience .comp-image {
+    width: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    justify-self: center;
+}
+
+#my-experience .experience .comp-image img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+#my-experience .experience .exp-details {
+    padding: 10px;
+    margin: 10px auto;
+    line-height: 2em;
+}
+
+#my-experience .experience .exp-details h2 {
+    margin: 15px 0;
+}
+
+#my-experience .experience .exp-details p {
+    margin: 15px 0;
+}
+
+/* My Projects */
+#my-projects {
+    background-color: var(--projs-bg);
+    padding: 40px 0;
+}
+
+#my-projects .project-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 30px 0;
+}
+
+#my-projects .project-sec .projs {
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    line-height: 30px;
+    background-color: var(--whiteish);
+}
+
+#my-projects .project-sec .projs h2 {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+#my-projects .project-sec .projs p {
+    width: 500px;
+    margin: 10px auto;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+#my-projects .project-sec .projs a {
+    text-decoration: none;
+    display: block;
+    width: 30%;
+    margin: var(--centering);
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #8d473f;
+    color: var(--whiteish);
+    font-weight: 500;
+    transition: ease-in-out 0.3s;
+}
+
+#my-projects .project-sec .projs a:hover {
+    background-color: #6a352f;
+}
+
+#my-projects .project-sec .projs img {
+    width: 550px;
+    border-radius: 10px;
+}
+
+/* Blogs */
+#my-blogs {
+    background-color: var(--blogs-bg);
+    padding: 40px 0;
+}
+
+#my-blogs .blog-sec {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+#my-blogs .blog-sec img {
+    width: 330px;
+}
+
+#my-blogs .blog-sec .blog {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    background-color: var(--whiteish);
+}
+
+#my-blogs .blog-sec .blog h2 {
+    padding: 10px;
+    width: 300px;
+    font-size: 20px;
+}
+
+#my-blogs .blog-sec .blog p {
+    width: 300px;
+    line-height: 1.8em;
+    padding: 15px;
+}
+
+#my-blogs .blog-sec .blog a {
+    text-decoration: none;
+    color: black;
+}
+
+#my-blogs .blog-sec .blog a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+#my-footer {
+    background-color: var(--footer-bg);
+}
+
+#my-footer .title {
+    color: var(--whiteish);
+}
+
+#my-footer .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#my-footer .footer-content a {
+    text-decoration: none;
+    color: #262626;
+}
+
+#my-footer .footer-content i {
+    display: block;
+    font-size: 15em;
+    color: var(--whiteish);
+}
+
+#my-footer .footer-content .contact-info {
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 2em;
+    width: 70%;
+    background-color: var(--whiteish);
+}
+
+#my-footer .footer-content .contact-info h2 {
+    margin: 20px 0;
+}
+
+#my-footer .socials {
+    font-size: 4em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#my-footer .socials #github {
+    color: var(--whiteish);
+    transition: ease-in-out 0.3s;
+}
+
+#my-footer .socials #github:hover {
+    color: #e6e6e6;
+}
+
+#my-footer .socials #instagram {
+    color: #c13584;
+    transition: ease-in-out 0.3s;
+}
+
+#my-footer .socials #instagram:hover {
+    color: #833AB4;
+}
+
+#my-footer .socials #linkedin {
+    color: #0072b1;
+    transition: ease-in-out 0.3s;
+}
+
+#my-footer .socials #linkedin:hover {
+    color: #0095e6;
+}
+
+#my-footer #copyright {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0;
+    color: var(--blackish);
+    background-color: #DDC9B4;
+}
+
+/* ********************** Max-width 1200px and less ********************** */
+@media screen and (max-width: 1200px) {
+    /* Navbar */
+    nav .logo span {
+        font-size: 20px;
+    }
+
+    nav #navlinks a {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    /* About me */
+    main #aboutme {
+        /* border: 1px solid; */
+        background-color: #2A3D45;
+    }
+    
+    .title {
+        padding: 50px;
+        font-size: 23px;
+    }
+    
+    main #aboutme .education .img-box {
+        width: 250px;
+    }
+    main #aboutme .education .img-box img {
+        width: 230px;
+    }
+    
+    main #aboutme .info .education .details {
+        width: 370px; 
+    }
+    
+    main #aboutme .info .aboutme-desc {
+        margin-right: 50px;
+        margin-bottom: 70px;
+    }
+
+    /* Technical skills */
+    #tech-skills .skills {
+        display: block;
+        align-items: center;
+    }
+    
+    #tech-skills .skills .skill-bars {
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 20px;
+        width: 500px;
+        background-color: var(--whiteish);
+    }
+
+    /* Projects */
+    #my-projects {
+        background-color: #C17C74;
+        padding-bottom: 40px;
+    }
+    
+    #my-projects .project-sec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 30px 0;
+    }
+    
+    #my-projects .project-sec .projs {
+        text-align: center;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        line-height: 30px;
+        background-color: var(--whiteish);
+    }
+    
+    #my-projects .project-sec .projs h2 {
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+    
+    #my-projects .project-sec .projs p {
+        width: 350px;
+        margin: 10px auto;
+        font-weight: 300;
+        line-height: 2em;
+    }
+    
+    #my-projects .project-sec .projs a {
+        text-decoration: none;
+        display: block;
+        width: 30%;
+        margin: var(--centering);
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #8d473f;
+        color: var(--whiteish);
+        font-weight: 500;
+        transition: ease-in-out 0.3s;
+    }
+    
+    #my-projects .project-sec .projs a:hover {
+        background-color: #6a352f;
+    }
+    
+    #my-projects .project-sec .projs img {
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    /* Footer */    
+    #my-footer .footer-content i {
+        font-size: 12em;
+    }
+    
+    #my-footer .footer-content .contact-info {
+        padding: 20px;
+        font-size: 18px;
+        width: 70%;
+    }
+    
+    #my-footer .footer-content .contact-info h2 {
+        margin: 15px 0;
+    }
+    
+    #my-footer .socials {
+        font-size: 4em;
+    }
+    
+    #my-footer #copyright {
+        font-size: 20px;
+    }
+}
+
+/* ********************** Max width 900px and less ********************** */
+@media screen and (max-width: 900px) {
+    /* Navbar (turn into hamburger menu) */ 
+    nav .logo span {
+        font-size: 20px;
+    }
+
+    nav #navlinks a {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    /* About me */
+    main #aboutme {
+        /* border: 1px solid; */
+        background-color: #2A3D45;
+    }
+
+    main #aboutme .info {
+        display: block;
+        padding: 20px 0;
+    }
+    
+    .title {
+        padding: 50px;
+        font-size: 23px;
+    }
+    
+    main #aboutme .education .img-box {
+        width: 250px;
+    }
+    main #aboutme .education .img-box img {
+        width: 230px;
+    }
+    
+    main #aboutme .info .education .details {
+        width: 70%; 
+    }
+    
+    main #aboutme .info .aboutme-desc {
+        width: 80%;
+        margin: var(--centering);
+        margin-bottom: 70px;
+    }
+
+    /* Technical skills */
+    #tech-skills .skills {
+        display: block;
+        align-items: center;
+    }
+    
+    #tech-skills .skills .skill-bars {
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 20px;
+        width: 500px;
+        background-color: var(--whiteish);
+    }
+
+    /* Experience */    
+    #my-experience .experience {
+        border-radius: 10px;
+        width: 80%;
+        padding: 20px;
+        margin: var(--centering);
+        display: block;
+        align-items: center;
+        background-color: var(--whiteish);
+    }
+    #my-experience .experience:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    
+    #my-experience .experience .comp-image {
+        width: 200px;
+        margin: 20px auto;
+    }
+    
+    #my-experience .experience .comp-image img {
+        width: 200px;
+        border-radius: 10px;
+    }
+    
+    #my-experience .experience .exp-details {
+        padding: 10px;
+        line-height: 2em;
+        text-align: center;
+    }
+
+    /* Projects */
+    #my-projects {
+        background-color: #C17C74;
+        padding-bottom: 40px;
+    }
+    
+    #my-projects .project-sec {
+        display: block;
+        grid-template-rows: auto;
+        margin: 30px 0;
+    }
+    
+    #my-projects .project-sec .projs {
+        text-align: center;
+        border-radius: 10px;
+        margin: 30px;
+        padding: 30px;
+        line-height: 30px;
+        background-color: var(--whiteish);
+    }
+    
+    #my-projects .project-sec .projs h2 {
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+    
+    #my-projects .project-sec .projs p {
+        width: 450px;
+        margin: 10px auto;
+        font-weight: 300;
+        line-height: 2em;
+    }
+    
+    #my-projects .project-sec .projs a {
+        text-decoration: none;
+        display: block;
+        width: 70%;
+        margin: var(--centering);
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #8d473f;
+        color: var(--whiteish);
+        font-weight: 500;
+        transition: ease-in-out 0.3s;
+    }
+    
+    #my-projects .project-sec .projs a:hover {
+        background-color: #6a352f;
+    }
+    
+    #my-projects .project-sec .projs img {
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    /* Blogs */
+    #my-blogs {
+        background-color: #BBA68F;
+        padding-bottom: 40px;
+    }
+
+    #my-blogs .blog-sec {
+        display: block;
+        justify-items: center;
+        margin: 30px 0;
+    }
+
+    #my-blogs .blog-sec img {
+        width: 500px;
+    }
+
+    #my-blogs .blog-sec .blog {
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        text-align: center;
+        background-color: var(--whiteish);
+        margin: var(--centering);
+        margin-bottom: 40px;
+        width: 500px;
+    }
+
+    #my-blogs .blog-sec .blog h2 {
+        padding: 10px;
+        width: 300px;
+        margin: var(--centering);
+        font-size: 20px;
+    }
+
+    #my-blogs .blog-sec .blog p {
+        width: 450px;
+        line-height: 1.8em;
+        padding: 15px;
+        margin: var(--centering);
+    }
+
+    /* Footer */    
+    #my-footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+    
+    #my-footer .footer-content a {
+        text-decoration: none;
+        color: #262626;
+    }
+    
+    #my-footer .footer-content i {
+        display: block;
+        font-size: 15em;
+        color: var(--whiteish);
+        margin: 50px 0;
+    }
+    
+    #my-footer .footer-content .contact-info {
+        border-radius: 10px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        font-size: 20px;
+        line-height: 2em;
+        width: 60%;
+        background-color: var(--whiteish);
+    }
+    
+    #my-footer .socials {
+        font-size: 6em;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    #my-footer .socials #github {
+        color: var(--whiteish);
+        transition: ease-in-out 0.3s;
+    }
+    
+    #my-footer .socials #github:hover {
+        color: #e6e6e6;
+    }
+    
+    #my-footer .socials #instagram {
+        color: #c13584;
+        transition: ease-in-out 0.3s;
+    }
+    
+    #my-footer .socials #instagram:hover {
+        color: #833AB4;
+    }
+    
+    #my-footer .socials #linkedin {
+        color: #0072b1;
+        transition: ease-in-out 0.3s;
+    }
+    
+    #my-footer .socials #linkedin:hover {
+        color: #0095e6;
+    }
+    
+    #my-footer #copyright {
+        text-align: center;
+        font-size: 25px;
+        padding: 20px 0;
+        color: var(--blackish);
+        background-color: #DDC9B4;
+    }
+}
+
+/* ********************** Max width 550px and less ********************** */
+@media screen and (max-width: 550px) {
+
+    /* Main view */
+    main .image-view .professional-pic {
+        width: 300px;
+        margin: 15px auto;
+    }
+    main .image-view .professional-pic img {
+        width: 300px;
+        border-radius: 45%;
+    }
+    main .picture-text span:first-child {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    main .picture-text span:last-child {
+        font-size: 23px;
+        font-style: italic;
+    }
+
+    /* About me */
+    main #aboutme {
+        background-color: #2A3D45;
+    }
+
+    main #aboutme .info {
+        display: block;
+        padding: 20px 0;
+    }
+    
+    .title {
+        padding: 30px;
+        font-size: 20px;
+    }
+    
+    main #aboutme .education .img-box {
+        width: 230px;
+    }
+    main #aboutme .education .img-box img {
+        width: 230px;
+    }
+    
+    main #aboutme .info .education .details {
+        width: 75%;
+        font-size: 14px;
+    }
+    
+    main #aboutme .info .aboutme-desc {
+        width: 80%;
+        margin: var(--centering);
+        margin-bottom: 70px;
+    }
+
+    main #aboutme .info .aboutme-desc p {
+        /* margin-bottom: 20px; */
+        font-size: 13px;
+    }
+
+    /* Technical Skills */
+    #tech-skills {
+        padding: 20px 0;
+        background-color: var(--skills-bg);
+    }
+
+    #tech-skills .skills {
+        display: block;
+        align-items: center;
+    }
+
+    #tech-skills .skills div h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #tech-skills .skills .skill-bars {
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 20px;
+        width: 350px;
+        background-color: var(--whiteish);
+    }
+
+    #tech-skills .skills .status {
+        margin: 20px 10px;
+        /* font-size: 15px; */
+    }
+
+    #tech-skills progress {
+        appearance: none;
+        display: block;
+        height: 30px; 
+        width: 330px;
+        margin-bottom: 30px;
+    }
+
+    /* Experience */    
+    #my-experience .experience {
+        border-radius: 10px;
+        width: 80%;
+        padding: 20px;
+        margin: var(--centering);
+        display: block;
+        align-items: center;
+        background-color: var(--whiteish);
+    }
+    #my-experience .experience:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    
+    #my-experience .experience .comp-image {
+        width: 200px;
+        margin: 20px auto;
+    }
+    
+    #my-experience .experience .comp-image img {
+        width: 200px;
+        border-radius: 10px;
+    }
+    
+    #my-experience .experience .exp-details {
+        padding: 10px;
+        line-height: 2em;
+        text-align: center;
+    }
+
+    #my-experience .experience .exp-details h2 {
+        font-size: 20px;
+    }
+    
+    #my-experience .experience .exp-details p {
+        font-size: 15px;
+    }
+
+    /* Projects */
+    #my-projects .project-sec {
+        display: block;
+        margin: 30px 0;
+    }
+    
+    #my-projects .project-sec .projs {
+        text-align: center;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+        line-height: 30px;
+        background-color: var(--whiteish);
+    }
+    
+    #my-projects .project-sec .projs h2 {
+        padding: 10px 0;
+        margin: 10px 0;
+        font-size: 22px;
+    }
+    
+    #my-projects .project-sec .projs p {
+        width: 300px;
+        margin: 10px auto;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 2em;
+    }
+    
+    #my-projects .project-sec .projs a {
+        text-decoration: none;
+        display: block;
+        width: 90%;
+        margin: var(--centering);
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #8d473f;
+        color: var(--whiteish);
+        font-weight: 500;
+        transition: ease-in-out 0.3s;
+    }
+    
+    #my-projects .project-sec .projs a:hover {
+        background-color: #6a352f;
+    }
+    
+    #my-projects .project-sec .projs img {
+        width: 280px;
+        border-radius: 10px;
+    }
+
+    /* Blogs */
+    #my-blogs {
+        background-color: #BBA68F;
+        padding-bottom: 40px;
+    }
+
+    #my-blogs .blog-sec {
+        display: block;
+        justify-items: center;
+        margin: 30px 0;
+    }
+
+    #my-blogs .blog-sec img {
+        width: 350px;
+    }
+
+    #my-blogs .blog-sec .blog {
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        text-align: center;
+        background-color: var(--whiteish);
+        margin: var(--centering);
+        margin-bottom: 40px;
+        width: 350px;
+    }
+
+    #my-blogs .blog-sec .blog h2 {
+        padding: 10px;
+        width: 300px;
+        margin: var(--centering);
+        font-size: 20px;
+    }
+
+    #my-blogs .blog-sec .blog p {
+        width: 310px;
+        line-height: 1.8em;
+        padding: 15px;
+        margin: var(--centering);
+    }
+
+    /* Footer */    
+    #my-footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    #my-footer .title h1 {
+        color: var(--whiteish);
+        font-size: 30px;
+    }
+
+    #my-footer .title p {
+        color: var(--whiteish);
+        font-size: 23px;
+    }
+    
+    #my-footer .footer-content a {
+        text-decoration: none;
+        color: #262626;
+    }
+    
+    #my-footer .footer-content i {
+        display: block;
+        font-size: 12em;
+        color: var(--whiteish);
+        margin: 50px 0;
+    }
+    
+    #my-footer .footer-content .contact-info {
+        border-radius: 10px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        font-size: 17px;
+        line-height: 2em;
+        width: 60%;
+        background-color: var(--whiteish);
+    }
+    
+    #my-footer .socials {
+        font-size: 4em;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    #my-footer #copyright {
+        font-size: 17px;
+        padding: 20px 0;
+    }
+}
+
+/* ********************** Max width 380px and less ********************** */
+@media screen and (max-width: 380px) {
+    /* Main view */
+    main .image-view .professional-pic {
+        width: 200px;
+    }
+    main .image-view .professional-pic img {
+        width: 200px;
+    }
+    main .picture-text span:first-child {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    main .picture-text span:last-child {
+        font-size: 17px;
+        font-style: italic;
+    }
+
+    /* About me */
+    main #aboutme {
+        background-color: #2A3D45;
+    }
+
+    main #aboutme .info {
+        display: block;
+        padding: 20px 0;
+    }
+    
+    .title {
+        padding: 30px;
+        font-size: 20px;
+    }
+    
+    main #aboutme .education .img-box {
+        width: 170px;
+    }
+    main #aboutme .education .img-box img {
+        width: 170px;
+    }
+    
+    main #aboutme .info .education .details {
+        width: 70%;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    
+    main #aboutme .info .aboutme-desc {
+        width: 75%;
+        margin: var(--centering);
+        margin-bottom: 70px;
+    }
+
+    main #aboutme .info .aboutme-desc p {
+        /* margin-bottom: 20px; */
+        font-size: 13px;
+    }
+
+    /* Technical Skills */
+    #tech-skills .skills div h2 {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    #tech-skills .skills .skill-bars {
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 20px;
+        width: 260px;
+        background-color: var(--whiteish);
+    }
+
+    #tech-skills .skills .status {
+        margin: 20px 10px;
+        font-size: 14px;
+    }
+
+    #tech-skills .skills .software {
+        height: 270px;
+    }
+
+    #tech-skills progress { 
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+    /* Experience */        
+    #my-experience .experience .comp-image {
+        width: 180px;
+        margin: 20px auto;
+    }
+    
+    #my-experience .experience .comp-image img {
+        width: 180px;
+        border-radius: 10px;
+    }
+
+    #my-experience .experience .exp-details h2 {
+        font-size: 19px;
+    }
+    
+    #my-experience .experience .exp-details p {
+        font-size: 14px;
+    }
+
+    /* Projects */
+    #my-projects .project-sec .projs h2 {
+        padding: 10px 0;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    
+    #my-projects .project-sec .projs p {
+        width: 245px;
+        margin: 10px auto;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 2em;
+    }
+    
+    #my-projects .project-sec .projs img {
+        width: 240px;
+        border-radius: 10px;
+    }
+
+    /* Blogs */
+    #my-blogs .blog-sec img {
+        width: 220px;
+    }
+
+    #my-blogs .blog-sec .blog {
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+        text-align: center;
+        background-color: var(--whiteish);
+        margin: var(--centering);
+        margin-bottom: 40px;
+        width: 220px;
+    }
+
+    #my-blogs .blog-sec .blog h2 {
+        padding: 10px;
+        width: 200px;
+        margin: var(--centering);
+        font-size: 15px;
+    }
+
+    #my-blogs .blog-sec .blog p {
+        width: 200px;
+        font-size: 13px;
+        line-height: 1.8em;
+        padding: 15px;
+        margin: var(--centering);
+    }
+
+    /* Footer */    
+    #my-footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    #my-footer .title h1 {
+        color: var(--whiteish);
+        font-size: 25px;
+    }
+
+    #my-footer .title p {
+        color: var(--whiteish);
+        font-size: 17px;
+    }
+    
+    #my-footer .footer-content a {
+        text-decoration: none;
+        color: #262626;
+    }
+    
+    #my-footer .footer-content i {
+        display: block;
+        font-size: 9em;
+        color: var(--whiteish);
+        margin: 50px 0;
+    }
+    
+    #my-footer .footer-content .contact-info {
+        border-radius: 10px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        font-size: 13px;
+        line-height: 2em;
+        width: 60%;
+        background-color: var(--whiteish);
+    }
+    
+    #my-footer .socials {
+        font-size: 3em;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    #my-footer #copyright {
+        font-size: 14px;
+        padding: 20px 0;
+    } 
+}

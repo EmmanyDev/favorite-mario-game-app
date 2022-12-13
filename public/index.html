@@ -4,14 +4,262 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>Favorite Super Mario Video Games</title>
+    <link rel= "stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/6cb8771653.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">
+        <div class="containter">
+          <header>
+              <!-- Navigation Bar -->
+              <nav>
+                  <div class="logo">
+                      <a href="/"><span><i class="fa-solid fa-laptop-code fa-xl"></i> EmmanyDev_</span></a>
+                  </div>
+                  <div id="navlinks">
+                      <a href="#aboutme">About</a>
+                      <a href="#tech-skills">Skills</a>
+                      <a href="#my-experience">Experience</a>
+                      <a href="#my-projects">Projects</a>
+                      <a href="#my-blogs">Blogs</a>
+                      <a href="#my-footer">Contact</a>
+                  </div>
+              </nav>
+          </header>
+
+          <!-- Main section (Picture title and About me) -->
+          <main>
+              <section class="image-view">
+                  <div class="professional-pic">
+                      <img src="./images/Professional_shot.jpg" alt="Young black male with white and yellow flannel">
+                  </div>
+                  <div class="picture-text">
+                      <span>Emmanuel Amoh</span>
+                      <span>Front-End Engineer</span>
+                  </div>
+              </section>
+              <section id="aboutme">
+                  <div class="title">
+                      <h1 id="aboutme-title">About Me</h1>
+                  </div>
+                  <div class="info">
+                      <div class="education">
+                          <div class="img-box">
+                              <img src="./images/Casual_Pic.jpg" alt="Young black male with space-themed v-neck t-shirt and sunglasses">
+                          </div>
+                          <div class="details">
+                              <p><i><b>Education:</b></i></p>
+                              <p>University of New Haven in West Haven CT</p>
+                              <p>Bachelor of Science in Computer Science</p>
+                              <p>GPA: 3.69</p>
+                              <p>Relevant Coursework: Data Structures and Algorithms, Databases and SQL, Intermed Programming C and C++, Java Programming, Web Database Application Development</p>
+                          </div>
+                      </div>
+                      <div class="aboutme-desc">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          <p>Vitae ultricies leo integer malesuada nunc vel risus commodo. Sed sed risus pretium quam vulputate. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Sem viverra aliquet eget sit. Orci a scelerisque purus semper eget duis. Varius morbi enim nunc faucibus. Felis eget velit aliquet sagittis. Tincidunt ornare massa eget egestas. Viverra aliquet eget sit amet tellus cras adipiscing. Eu volutpat odio facilisis mauris sit amet massa vitae.</p>
+                      </div>
+                  </div>
+              </section>
+          </main>
+
+          <!-- Technical Skills -->
+          <section id="tech-skills">
+              <div class="title">
+                  <h1>Technical Skills</h1>
+                  <p>What I know 🧠</p>
+              </div>
+              <div class="skills">
+                  <div class="skill-bars programming">
+                      <h2>Programming/Coding Languages</h2>
+                      <div class="status">
+                          <label for="html-bar">HTML: </label>
+                          <span>90%</span>
+                          <progress id="html-bar" value="90" max="100">90%</progress>
+
+                          <label for="css-bar">CSS: </label>
+                          <span>84%</span>
+                          <progress id="css-bar" value="84" max="100">84%</progress>
+
+                          <label for="js-bar">JavaScript: </label>
+                          <span>80%</span>
+                          <progress id="js-bar" value="80" max="100">80%</progress>
+
+                          <label for="python-bar">Python: </label>
+                          <span>70%</span>
+                          <progress id="python-bar" value="70" max="100">70%</progress>
+
+                          <label for="java-bar">Java: </label>
+                          <span>50%</span>
+                          <progress id="java-bar" value="50" max="100">50%</progress>
+
+                          <label for="sql-bar">SQL: </label>
+                          <span>40%</span>
+                          <progress id="sql-bar" value="40" max="100">40%</progress>
+
+                          <label for="c-bar">C: </label>
+                          <span>60%</span>
+                          <progress id="c-bar" value="60" max="100">60%</progress>
+
+                          <label for="cpp-bar">C++: </label>
+                          <span>65%</span>
+                          <progress id="cpp-bar" value="65" max="100">65%</progress>
+                      </div>
+                      
+                  </div>
+                  <div class="skill-bars software">
+                      <h2>Software</h2>
+                      <div class="status">
+                          <label for="vscode-bar">Visual Studio Code: </label>
+                          <span>90%</span>
+                          <progress id="vscode-bar" value="90" max="100">90%</progress>
+
+                          <label for="atom-bar">Atom: </label>
+                          <span>80%</span>
+                          <progress id="atom-bar" value="80" max="100">80%</progress>
+
+                          <label for="xcode-bar">XCode: </label>
+                          <span>60%</span>
+                          <progress id="css-bar" value="60" max="100">60%</progress>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- My experience -->
+          <section id="my-experience">
+              <div class="title">
+                  <h1>Experience</h1>
+                  <p>What I've done 👨🏾‍💻</p>
+              </div>
+              <div class="experience">
+                  <div class="comp-image">
+                      <img src="images/aws logo.png" alt="Amazon Web Services">
+                  </div>
+                  <div class="exp-details">
+                      <h2>Amazon Web Services (AWS)</h2>
+                      <p><em><b>Front-End Engineer Intern, New York City</b></em></p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Non tellus orci ac auctor augue. Nam aliquam sem et tortor consequat id porta. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Quis ipsum suspendisse ultrices gravida dictum fusce ut. </p>
+                  </div>
+              </div>
+              <div class="experience">
+                  <div class="comp-image">
+                      <img src="images/MLT-logo.jpeg" alt="Amazon Web Services">
+                  </div>
+                  <div class="exp-details">
+                      <h2>Management Leadership for Tomorrow (MLT)</h2>
+                      <p><em><b>CareerPrep Fellow</b></em></p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Non tellus orci ac auctor augue. Nam aliquam sem et tortor consequat id porta. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Quis ipsum suspendisse ultrices gravida dictum fusce ut. </p>
+                  </div>
+              </div>
+              <div class="experience">
+                  <div class="comp-image">
+                      <img src="images/upperline code logo.jpeg" alt="Amazon Web Services">
+                  </div>
+                  <div class="exp-details">
+                      <h2>Upperline Code</h2>
+                      <p><em><b>FinTech Focus Fellow, New York City</b></em></p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Non tellus orci ac auctor augue. Nam aliquam sem et tortor consequat id porta. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Quis ipsum suspendisse ultrices gravida dictum fusce ut. </p>
+                  </div>
+              </div>
+          </section>
+
+          <!-- My Projects -->
+          <section id="my-projects">
+              <div class="title">
+                  <h1>My Projects</h1>
+                  <p>What I've created ✨</p>
+              </div>
+              <div class="project-sec">
+                  <div class="projs">
+                      <h2>UP Coding Club Website</h2>
+                      <div class="proj-img">
+                          <img src="images/UP Coding Club Website.png" alt="UP Coding club website">
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Non tellus orci ac auctor augue. Nam aliquam sem et tortor consequat id porta.</p>
+                      <a href="#">Visit Website</a>
+                  </div>
+                  <div class="projs">
+                      <h2>My Coding Skills Report (2021)</h2>
+                      <div class="proj-img">
+                          <img src="images/Amoh's Tech Skills.png" alt="My Tech Skills website">
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Non tellus orci ac auctor augue. Nam aliquam sem et tortor consequat id porta.</p>
+                      <a href="#">Visit Website</a>
+                  </div>
+                  <div class="projs">
+                      <h2>Amoh's Pizza</h2>
+                      <div class="proj-img">
+                          <img src="images/Amoh's Pizza.png" alt="Amoh's Pizza">
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Non tellus orci ac auctor augue. Nam aliquam sem et tortor consequat id porta.</p>
+                      <a href="#">Visit Website</a>
+                  </div>
+                  <div class="projs">
+                      <h2>CoderzBlock_ Login</h2>
+                      <div class="proj-img">
+                          <img src="images/CoderzBlock_.png" alt="CoderzBlock_ Login Page">
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat. Non tellus orci ac auctor augue. Nam aliquam sem et tortor consequat id porta.</p>
+                      <a href="#">Visit Website</a>
+                  </div>
+              </div>
+          </section>
+
+          <!-- My Blogs -->
+          <article id="my-blogs">
+              <div class="title">
+                  <h1>My Blog</h1>
+                  <p>Check out my articles 📄</p>
+              </div>
+              <div class="blog-sec">
+                  <div class="blog">
+                      <div class="blog-img">
+                          <a href="#"><img src="images/desk img.jpeg" alt="Things on a desk image"></a>
+                      </div>
+                      <h2>5 Things I've Learned as a Self-Taught Web Developer</h2>
+                      <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat.</a></p>
+                  </div>
+                  <div class="blog">
+                      <div class="blog-img">
+                          <a href="#"><img src="images/amazon store logo img.jpeg" alt="Amazon store logo image"></a>
+                      </div>
+                      <h2>My Amazon Intern Experience</h2>
+                      <a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat.</p></a>
+                  </div>
+              </div>
+          </article>
+
+          <!-- Footer -->
+          <footer id="my-footer">
+              <div class="title">
+                  <h1>Want to contact me?</h1>
+                  <p>Here's how:</p>
+              </div>
+              <div class="footer-content">
+                  <div class="footer-logo">
+                      <a href="/"><i class="fa-solid fa-laptop-code fa-xl"></i></a>
+                  </div>
+                  <div class="contact-info">
+                      <h2>Contact Info:</h2>
+                      <p>Name: Emmanuel Amoh</p>
+                      <p>Email: eamoh600@gmail.com</p>
+                      <p>Phone: (000) 000-0000</p>
+                  </div>
+              </div>
+              <div class="socials">
+                  <a href="https://github.com/EmmanyDev" target="_blank"><i id="github" class="fa-brands fa-square-github"></i></a>
+                  <a href="https://www.instagram.com/emmanydeveloper/" target="_blank"><i id="instagram" class="fa-brands fa-square-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/emmanuel-amoh-a0a624152/" target="_blank"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <p id="copyright"><b>&copy; Copyrights 2022; All rights reserved</b></p>
+          </footer>
+      </div>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
